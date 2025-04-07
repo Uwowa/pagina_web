@@ -1,0 +1,122 @@
+/* body lol */
+body {
+  background-color: rgb(255, 135, 135);
+  font-family: 'Lucida Sans', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* titulos idk */
+.title-box {
+  width: 50%;
+  background-color: rgba(255, 135, 135, 0.7); 
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: relative;
+  left: 365px;
+  top: 5px;
+  animation: fadeInTitle 1s ease-out;
+}
+
+/*animación de la caja de titulo*/
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* centra todo*/
+.main-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* caja de contenido */
+.content-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px 150px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* animación de las cajitas meow */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* nubecitas del background */
+.floating {
+  position: absolute;
+  width: 250px; 
+  animation: floatDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+}
+
+#nube1 {
+  top: 150px;
+  left: 0%;
+}
+
+#nube2 {
+  top: 350px;
+  left: 83%;
+}
+
+#nube3 {
+  top: -100px;
+  left: 83%;
+}
+
+/* imagenes!! */
+#akira {
+  width: 300px;
+  border-radius: 15%;
+}
+
+/* color de los encabezados y parrafos */
+h1, h4{
+  color: papayawhip;
+}
+
+h2, p {
+  color: rgb(255, 135, 135);
+}
